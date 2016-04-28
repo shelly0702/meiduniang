@@ -1,0 +1,45 @@
+@import "_base.scss";
+@import "_lib.scss";
+@import "_swiper.scss";
+@import "_search.scss";
+.banner {
+	position: relative;
+	.img-list {
+		width: 100%;
+		max-height: 300px;
+		font-size: 0;
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 300px;
+		}
+	}
+	.banner-focus {
+		position: absolute;
+		width: 100%;
+		bottom: 20px;
+		left: 0;
+		text-align: center;
+		.focus-wrap {
+			background: rgba(0,0,0,.35);
+			padding: 3px 20px;
+			font-size: 0;
+			display: inline-block;
+			border-radius: 20px;
+		}
+		.focus {
+			display: inline-block;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: rgba(255,255,255,.4);
+			margin: 0 3px;
+		}
+		.focus.curr {
+			width: 8px;
+			height: 8px;
+			background: #f23030;
+			border: 2px solid #fff;
+		}
+	}
+}
