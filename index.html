@@ -9,7 +9,7 @@
 	<meta content="black" name="apple-mobile-web-app-status-bar-style">
 	<meta content="#ffffff" name="msapplication-TileColor" />
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-	<title>首页</title>
+	<title>美度娘</title>
 	<script>
         var deviceWidth = document.documentElement.clientWidth;
         if (deviceWidth > 640) {
@@ -32,32 +32,31 @@
 	                        <div class="s-input-tab-txt">
 	                            北京
 	                        </div>
+	                    </div>
+	                    <div class="s-input-tab hide">
+	                        <div class="s-input-tab-txt">
+	                            项目
+	                        </div>
 	                        <div class="s-input-tab-nav off" id="J_TabNav">
 	                            <ul>
-	                                <li class="all">
-	                                    <span class="icon icons-baobei">
-	                                    </span>
-	                                    宝贝
+	                                <li>
+	                                    项目
 	                                </li>
-	                                <li class="shop">
-	                                    <span class="icon icons-shop">
-	                                    </span>
-	                                    店铺
+	                                <li>
+	                                    美容院
 	                                </li>
-	                                <li class="mall">
-	                                    <span class="icon icons-tmall">
-	                                    </span>
-	                                    天猫
+	                                <li>
+	                                    美容师
 	                                </li>
 	                            </ul>
 	                        </div>
 	                    </div>
 	                    <div class="s-input-frame">
-	                        <form class="c-form-suggest" id="J_Search" method="get" action="/h5">
+	                        <div class="c-form-suggest" id="J_Search">
 	                            <div class="s-form-search search-form">
 	                                <input type="search" name="q" class="J_autocomplete" autocomplete="off"
-	                                value="">
-	                                <button style="display: none;">
+	                                value="" placeholder="限时|无针水光">
+	                                <button style="display: none;" type="button">
 	                                    <span>
 	                                    </span>
 	                                </button>
@@ -65,11 +64,11 @@
 	                            <div class="c-form-btn">
 	                                <input type="submit" name="search" class="icons-search">
 	                            </div>
-	                        </form>
+	                        </div>
 	                    </div>
 	                </div>
 	            </div>
-	            <a class="logo" href="//m.taobao.com" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+	            <a class="logo" href="message.html" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
 	                <div class="icons-home">
 	                </div>
 	            </a>
@@ -78,103 +77,50 @@
 	            </div>
 	        </div>
 	    </header>
+	    <div class="con-item con-list city-list hide">
+			<ul class="list">
+				<li class="active"><span class="txt">北京</span><i class="i-sel"></i></li>
+				<li><span class="txt">上海</span><i class="i-sel"></i></li>
+				<li><span class="txt">广州</span><i class="i-sel"></i></li>
+				<li><span class="txt">深圳</span><i class="i-sel"></i></li>
+				<li><span class="txt">宜昌</span><i class="i-sel"></i></li>
+				<li><span class="txt">广州</span><i class="i-sel"></i></li>
+			</ul>
+		</div>
 	    <div class="suggest-container" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+	    	<h3>搜索历史</h3>
+	        <ul class="suggest-hotkey" data-sugg-type="2">
+	            <li>
+	                上门美甲
+	            </li>
+	        </ul>
 	        <h3>
 	            大家都在搜
 	        </h3>
 	        <ul class="suggest-hotkey" data-sugg-type="2">
 	            <li>
-	                充电宝
+	                简约法式
 	            </li>
 	            <li>
-	                性用品
+	                日本 无针水光
 	            </li>
 	            <li>
-	                饶春荣兰花
+	                碎花清新甲
 	            </li>
 	            <li>
-	                打电话平板电脑
+	                纤体塑形
 	            </li>
 	            <li>
-	                秋装女
+	                浪漫新娘甲
 	            </li>
 	            <li>
-	                套装裙秋
-	            </li>
-	            <li>
-	                哈伦裤男
-	            </li>
-	            <li>
-	                书包
-	            </li>
-	            <li>
-	                苹果5s
-	            </li>
-	            <li>
-	                羽绒服男
+	                苼花孕睫术
 	            </li>
 	        </ul>
 	    </div>
 	    <div class="rellkey-container" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
 	    </div>
 	    <div class="onesearch-container" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
-	    </div>
-	    <div class="filterbar-container" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
-	        <div class="filter-bar J_sortTab">
-	            <div class="viewtype-switch J_SwitchViewtype">
-	                <div class="icons-list">
-	                </div>
-	            </div>
-	            <ul class="sort-tab">
-	                <li class="droplist-trigger selected">
-	                    <span class="text">
-	                        综合排序
-	                    </span>
-	                    <span class="arrow">
-	                    </span>
-	                    <span class="bar">
-	                    </span>
-	                </li>
-	                <li class="sort" data-value="_sale">
-	                    销量优先
-	                    <span class="bar">
-	                    </span>
-	                </li>
-	                <li>
-	                    <div class="top-bar-e">
-	                        <span id="J_Sift">
-	                            <i class="icons-sift">
-	                            </i>
-	                            筛选
-	                        </span>
-	                    </div>
-	                </li>
-	            </ul>
-	            <div class="droplist">
-	                <ul class="sorts">
-	                    <li class="sort selected" data-value="">
-	                        综合排序
-	                        <span class="icons-checked-icon">
-	                        </span>
-	                    </li>
-	                    <li class="sort" data-value="_bid">
-	                        价格从高到低
-	                        <span class="icons-checked-icon">
-	                        </span>
-	                    </li>
-	                    <li class="sort" data-value="bid">
-	                        价格从低到高
-	                        <span class="icons-checked-icon">
-	                        </span>
-	                    </li>
-	                    <li class="sort" data-value="_ratesum">
-	                        信用排序
-	                        <span class="icons-checked-icon">
-	                        </span>
-	                    </li>
-	                </ul>
-	            </div>
-	        </div>
 	    </div>
 	    <div class="tip-container" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
 	    </div>
@@ -202,7 +148,53 @@
 		        <div class="swiper-pagination"></div>
 		    </div>
 		</section> 
-	</div>	
+	</div>
+	<div class="kinds">
+		<div class="box">
+			<div class="flex">
+				<a href="#">
+					<div class="flex-wrap"><i></i><p>美容</p></div>
+				</a>
+			</div>
+			<div class="flex">
+				<a href="#">
+					<div class="flex-wrap"><i></i><p>美发</p></div>
+				</a>
+			</div>
+			<div class="flex">
+				<a href="#">
+					<div class="flex-wrap"><i></i><p>美甲</p></div>
+				</a>
+			</div>
+		</div>
+		<div class="box">
+			<div class="flex">
+				<a href="#">
+					<div class="flex-wrap"><i></i><p>美睫</p></div>
+				</a>
+			</div>
+			<div class="flex">
+				<a href="#">
+					<div class="flex-wrap"><i></i><p>纹绣</p></div>
+				</a>
+			</div>
+			<div class="flex">
+				<a href="#">
+					<div class="flex-wrap"><i></i><p>微整</p></div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<footer class="nav">
+		<ul>
+	        <li class="active"><a href=""><div class="icon-wrap"><i class="i-money"></i></div><p class="nav-text">首页</p></a></li>
+	        <li><a href=""><div class="icon-wrap"><i class="i-unlock"></i></div><p class="nav-text">品牌</p></a></li>
+	        <li><a href=""><div class="icon-wrap"><i class="i-base"></i></div><p class="nav-text">后宫</p></a></li>
+	        <li><a href=""><div class="icon-wrap"><i class="i-my"></i></div><p class="nav-text">订单</p></a></li>
+	        <li><a href=""><div class="icon-wrap"><i class="i-my"></i></div><p class="nav-text">我的</p></a></li>
+	    </ul>
+	</footer>
+
 </div>
 <script type="text/javascript" src="js/zepto.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>

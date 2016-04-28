@@ -2,6 +2,7 @@
 @import "_lib.scss";
 @import "_swiper.scss";
 @import "_search.scss";
+@import "_footer.scss";
 .banner {
 	position: relative;
 	.img-list {
@@ -42,4 +43,41 @@
 			border: 2px solid #fff;
 		}
 	}
+}
+
+.kinds {
+	.box {
+		@include box;
+		background: #f69;
+		@include bd-tb-1px(solid,#fff,bottom);
+		text-align: center;
+
+		&:last-child {
+			&:after {
+				border: none;
+			}
+		}
+		.flex {
+			@include flex;
+			text-align: center;
+			@include bd-lr-1px(solid,#fff,right);
+			height: 1rem;
+			a {
+				display: table;
+				width: 100%;
+				height: 100%;
+				color: #fff;
+				.flex-wrap {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			&:last-child {
+				&:after {
+					border: none;
+				}
+			}
+		}
+	}
+
 }
