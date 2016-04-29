@@ -47,6 +47,7 @@ $main-color: #f69;
 }
 
 .kinds {
+	margin-top: 5px;
 	.box {
 		@include box;
 		background: $main-color;
@@ -85,10 +86,7 @@ $main-color: #f69;
 .hot {
 	.m {
 		background: #fff;
-		margin-bottom: 5px;
-		&:last-child {
-			margin-bottom: 0;
-		}
+		margin-top: 5px;
 	}
 	.mt {
 	    color: #E24AA5;
