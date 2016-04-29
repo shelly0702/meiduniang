@@ -1,3 +1,35 @@
+$main-color: #f69;
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 22px;
+}
+.fa-home:before {
+  content: "\f015";
+}
+.fa-commenting:before {
+  content: "\f27a";
+}
+.fa-list:before {
+  content: "\f03a";
+}
+.fa-flag:before {
+  content: "\f024";
+}
+.fa-user:before {
+  content: "\f007";
+}
 .nav {
   position: fixed;
   bottom: 0;
@@ -5,8 +37,8 @@
   height: .88rem;
   min-width: 320px;
   margin: 0 auto;
-  border-top: 1px solid #36363d;
-  background-color: #1d1d25;
+  background-color: #fff;
+  border-top: 1px solid $main-color;
   ul {
   	@include box;
   }
@@ -18,7 +50,7 @@
   }
   li a {
     display: block;
-    color: #4c4c4e;
+    color: #888;
     padding-top: .1rem;
   }
   li .icon-wrap {
@@ -29,44 +61,7 @@
   li i {
     display: inline-block;
   }
-  li i.i-money {
-    width: .4rem;
-    height: .4rem;
-    background: url(i/i-money.png) no-repeat;
-    background-size: 100% 100%;
-  }
-  li i.i-unlock {
-    width: .34rem;
-    height: .38rem;
-    background: url(i/i-unlock.png) no-repeat;
-    background-size: 100% 100%;
-  }
-  li i.i-base {
-    width: .4rem;
-    height: .4rem;
-    background: url(i/i-base.png) no-repeat;
-    background-size: 100% 100%;
-  }
-
-  li i.i-my {
-    width: .4rem;
-    height: .4rem;
-    background: url(i/i-my.png) no-repeat;
-    background-size: 100% 100%;
-  }
   li.active a {
-    color: #fc6027;
-  }
-  li.active i.i-money{
-    background-image: url(i/i-money-h.png);
-  }
-  li.active i.i-unlock{
-    background-image: url(i/i-unlock-h.png);
-  }
-  li.active i.i-base{
-    background-image: url(i/i-base-h.png);
-  }
-  li.active i.i-my{
-    background-image: url(i/i-my-h.png);
+    color: $main-color;
   }
 }
