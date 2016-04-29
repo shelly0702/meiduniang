@@ -47,13 +47,11 @@ $main-color: #f69;
 }
 
 .kinds {
-	margin-top: 5px;
 	.box {
 		@include box;
 		background: $main-color;
 		@include bd-tb-1px(solid,#fff,bottom);
 		text-align: center;
-
 		&:last-child {
 			&:after {
 				border: none;
@@ -87,6 +85,9 @@ $main-color: #f69;
 	.m {
 		background: #fff;
 		margin-top: 5px;
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 	.mt {
 	    color: #E24AA5;
