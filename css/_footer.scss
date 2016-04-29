@@ -37,8 +37,8 @@ $main-color: #f69;
   height: .88rem;
   min-width: 320px;
   margin: 0 auto;
-  background-color: #fff;
-  border-top: 1px solid $main-color;
+  background-color: #f9eded;
+  border-top: 1px solid #e4d7d7;
   ul {
   	@include box;
   }

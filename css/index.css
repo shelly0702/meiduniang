@@ -2823,8 +2823,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   height: .88rem;
   min-width: 320px;
   margin: 0 auto;
-  background-color: #fff;
-  border-top: 1px solid #f69; }
+  background-color: #f9eded;
+  border-top: 1px solid #e4d7d7; }
   .nav ul {
     display: box;
     display: -webkit-box;
