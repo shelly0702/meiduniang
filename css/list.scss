@@ -2,6 +2,8 @@
 @import "_lib.scss";
 @import "_search.scss";
 @import "_footer.scss";
+@import "_icons.scss";
+@import "_tab.scss";
 $main-color: #f69;
 .search-con {
 	.fix-box {
@@ -226,25 +228,6 @@ $main-color: #f69;
 				    content: "\f005";
 				}
 			}
-		}
-	}
-}
-.top-box {
-	top: 0;
-	left:  0;
-	width: 100%;
-	height: 46px;
-	line-height: 46px;
-	@include box;
-	background: rgba(255,255,255,0.95);
-	position:absolute;
-	z-index: 101;
-	border-bottom: 1px solid #dbdbdb;
-	.flex3 {
-		@include flex;
-		text-align: center;
-		&.active {
-			color: $main-color;
 		}
 	}
 }

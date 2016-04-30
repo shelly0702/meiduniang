@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" /> 
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="#ffffff" name="msapplication-TileColor" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>我的订单</title>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 640) {
+            deviceWidth = 640;
+        } else if (deviceWidth < 320) {
+            deviceWidth = 320;
+        }
+        document.documentElement.style.fontSize = deviceWidth / 6.4 + 'px';
+    </script>
+    <link type="text/css" rel="stylesheet"  href="css/my-order.css"/>
+</head> 
+<body>
+<div class="wrapper">
+    <section class="top-box">
+        <div class="flex3 active">全部</div>
+        <div class="flex3">进行中</div>
+        <div class="flex3">待评价</div>
+    </section>
+    <footer class="nav">
+        <ul>
+            <li><a href="index.html"><div class="icon-wrap"><i class="fa fa-home"></i></div><p class="nav-text">首页</p></a></li>
+            <li><a href="brand.html"><div class="icon-wrap"><i class="fa fa-flag"></i></div><p class="nav-text">品牌</p></a></li>
+            <li><a href="comment.html"><div class="icon-wrap"><i class="fa fa-commenting"></i></div><p class="nav-text">后宫</p></a></li>
+            <li class="active"><a href="my-order.html"><div class="icon-wrap"><i class="fa fa-list"></i></div><p class="nav-text">订单</p></a></li>
+            <li><a href="my.html"><div class="icon-wrap"><i class="fa fa-user"></i></div><p class="nav-text">我的</p></a></li>
+        </ul>
+    </footer>
+
+</div>
+<script type="text/javascript" src="js/zepto.js"></script>
+
+</body>
+</html> 
