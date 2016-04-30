@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "GBK";
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -76,17 +76,17 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   -webkit-appearance: none !important;
   margin: 0; }
 
-/*涓婁笅鍗曡竟*/
-/*宸﹀彸鍗曡竟*/
-/*鍥涜竟*/
-/* 姘村钩鎺掑垪 */
-/* 鍨傜洿鎺掑垪 */
-/* 骞冲潎鍒嗛厤 */
-/* 鍨傜洿灞呬腑 */
-/* 鍨傜洿闈犱笂 */
-/* 姘村钩灞呬腑 */
-/* 涓よ竟瀵归綈 */
-/* 娴忚鍣ㄥ墠缂� */
+/*上下单边*/
+/*左右单边*/
+/*四边*/
+/* 水平排列 */
+/* 垂直排列 */
+/* 平均分配 */
+/* 垂直居中 */
+/* 垂直靠上 */
+/* 水平居中 */
+/* 两边对齐 */
+/* 浏览器前缀 */
 .icons-noresult, .icons-taobao-logo, .icons-home, .icons-baobei, .icons-tmall, .icons-slider-block, .icons-shop, .icons-largest, .icons-list, .icons-larger, .icons-sift-select, .icons-search, .icons-gotop, .icons-sift, .icons-checked-icon, .icons-sift-up, .icons-sift-down, .icons-suggest-addto, .icons-sortbar-arrow, .icons-sortbar-arrow-selected, .icons-miniphone, .icons-arrow-down {
   background-image: url("i/icons.png");
   background-repeat: no-repeat;
@@ -475,7 +475,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 
 .larger-view .page-container li .d .d-main .hot {
   display: inline-block;
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
 
 .larger-view .page-container li .d .d-price {
   line-height: 12px;
@@ -1024,23 +1024,31 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 @keyframes sift-body-move {
   0% {
     left: 0; }
+
   100% {
     left: -90%; } }
+
 @-webkit-keyframes sift-body-move {
   0% {
     left: 0; }
+
   100% {
     left: -90%; } }
+
 @keyframes sift-body-back {
   0% {
     left: -90%; }
+
   100% {
     left: 0; } }
+
 @-webkit-keyframes sift-body-back {
   0% {
     left: -90%; }
+
   100% {
     left: 0; } }
+
 #price-range {
   max-width: 100%;
   overflow: visible;
@@ -1675,13 +1683,17 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 @-webkit-keyframes slidedown {
   0% {
     -webkit-transform: translateY(-84px); }
+
   100% {
     -webkit-transform: translateY(0); } }
+
 @-webkit-keyframes slidedown-delay {
   0%,30% {
     -webkit-transform: translateY(-84px); }
+
   100% {
     -webkit-transform: translateY(0); } }
+
 #tbh5v0.fixed .toolbar {
   overflow: hidden; }
 
@@ -2122,7 +2134,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   left: 50%;
   margin-left: -28px;
   border: 1px solid #dbdbdb;
-  border-bottom-color: #E8E8E8; }
+  border-bottom-color: #e8e8e8; }
 
 .expended .pagenav-normal .pagenav-main .close .icons-arrow-down {
   margin-top: 7px;
@@ -2173,7 +2185,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   border-radius: 8px; }
 
 * {
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 .tpl-from-server {
   display: none; }
@@ -2413,6 +2425,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -2473,7 +2486,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   .nav li i {
     display: inline-block; }
   .nav li.active a {
-    color: #f69; }
+    color: #ff6699; }
 
 .search-con .fix-box {
   display: box;
@@ -2707,7 +2720,34 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
         line-height: 16px; }
       .list .item .info .person-box .fa-star {
         font-size: 12px;
-        color: #f69;
+        color: #ff6699;
         vertical-align: middle; }
       .list .item .info .person-box .fa-star:before {
         content: "\f005"; }
+
+.top-box {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  background: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  z-index: 101;
+  border-bottom: 1px solid #dbdbdb; }
+  .top-box .flex3 {
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center; }
+    .top-box .flex3.active {
+      color: #ff6699; }
