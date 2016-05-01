@@ -162,6 +162,15 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 .fa-commenting-o:before {
   content: "\f27b"; }
 
+.fa-gear:before, .fa-cog:before {
+  content: "\f013"; }
+
+.fa-map-marker:before {
+  content: "\f041"; }
+
+.fa-reddit-alien:before {
+  content: "\f281"; }
+
 .top-box {
   top: 0;
   left: 0;
