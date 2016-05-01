@@ -1296,7 +1296,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   background: none;
   width: 100%;
   height: 26px;
-  font-size: 14px; }
+  font-size: 14px;
+  vertical-align: middle; }
 
 .s-input-frame .s-form-search .J_autocomplete::-webkit-search-cancel-button {
   display: none; }

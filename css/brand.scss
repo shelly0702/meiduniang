@@ -3,3 +3,114 @@
 @import "_search.scss";
 @import "_footer.scss";
 @import "_icons.scss";
+.ml10 {
+    margin-left: 10px;
+}
+.product-classify .menu {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 46px;
+    background: #f6f6f6;
+    padding-bottom: 50px
+}
+
+.product-classify .menu:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 200%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    border-right: 1px solid #d7d7d7
+}
+
+.product-classify .menu li a {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 15px;
+    color: #444;
+    font-size: 12px;
+    position: relative
+}
+
+.product-classify .menu li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    border-bottom: 1px solid #d7d7d7
+}
+
+.product-classify .menu .curr a {
+    padding-left: 13px;
+    border-left: 2px solid #f15353;
+    color: #f15353;
+    background: #fff
+}
+
+.product-classify .content {
+    margin-left: 25%;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.product-classify .content .m .mt {
+    padding: 15px 10px 10px 0;
+    color: #242424;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-classify .content .m .mt h3 {
+    float: left;
+    font-size: 16px;
+}
+
+.product-classify .content .m .mt .more {
+    float: right;
+    width: 12px;
+    font-size: 14px;
+    text-align: right;
+    color: #242424
+}
+.product-classify .content .m .mt .link{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.product-classify .content .m .mc ul {
+    overflow: hidden;
+}
+
+.product-classify .content .m .mc ul li {
+    float: left;
+    width: 30.33%;
+    margin-right: 3%;
+    padding-bottom: 10px;
+}
+
+.product-classify .content .m .mc ul li img {
+    width: 100%;
+    min-height: 98px;
+    height: auto;
+}
