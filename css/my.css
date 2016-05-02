@@ -171,6 +171,12 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 .fa-reddit-alien:before {
   content: "\f281"; }
 
+.fa-file-text-o:before {
+  content: "\f0f6"; }
+
+.fa-comments-o:before {
+  content: "\f0e6"; }
+
 .user {
   padding: 35px 0;
   width: 100%; }
