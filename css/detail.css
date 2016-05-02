@@ -2907,4 +2907,5 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
     border-radius: 5px;
     text-align: center;
     border: none;
+    font-size: 14px;
     padding: 10px 0; }
