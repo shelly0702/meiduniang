@@ -2913,7 +2913,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 .detail {
   background: #fff;
   margin-top: 10px;
-  height: 240px; }
+  height: 240px;
+  overflow: hidden; }
   .detail .mt {
     padding: 10px;
     font-weight: bold; }
@@ -2971,7 +2972,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
 #scroll {
   position: absolute;
   z-index: 1;
-  height: 100%;
+  height: 160px;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
