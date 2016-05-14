@@ -2922,9 +2922,14 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   .detail .mc {
     padding: 10px;
     font-weight: bold; }
+  .detail #scroll-wraper {
+    width: 100%;
+    height: 160px;
+    overflow: hidden; }
   .detail .detail-x {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    overflow: hidden; }
     .detail .detail-x ul {
       width: 2000px; }
       .detail .detail-x ul li {
