@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" /> 
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="#ffffff" name="msapplication-TileColor" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>提交订单</title>
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 640) {
+            deviceWidth = 640;
+        } else if (deviceWidth < 320) {
+            deviceWidth = 320;
+        }
+        document.documentElement.style.fontSize = deviceWidth / 6.4 + 'px';
+    </script>
+    <link type="text/css" rel="stylesheet"  href="css/submit.css"/>
+</head> 
+<body>
+<div class="wrapper">
+    <section class="my-menu">
+        <ul>
+            <li>
+                <div class="menu-l">预约人：廖艳丽 15971677060</div>
+                <a href="" class="menu-link"></a>
+            </li>
+            <li>
+                <div class="menu-l">服务时间：</div>
+                <div class="menu-r">请选择</div>
+                <a href="" class="menu-link"></a>
+            </li>
+            <li>
+                <div class="menu-l">服务地址：</div>
+                <div class="menu-r">请选择</div>
+                <a href="" class="menu-link"></a>
+            </li>
+        </ul>
+    </section>
+    <section class="my-menu">
+        <ul>
+            <li class="box">
+                <div class="pic">
+                    <img src="images/list001.jpg" alt="">
+                </div>
+                <div class="tit">
+                    <p>项目：特价自然款</p>
+                    <p>手艺人：白天然</p>
+                </div>
+                <div class="price"><span class="red-txt">￥202.00</span></div>
+            </li>
+            <li>
+                <div class="menu-l">优惠券</div>
+                <div class="menu-r pink-txt">不使用优惠券</div>
+                <a href="" class="menu-link"></a>
+            </li>
+            <li>
+                <div class="menu-l">意外险：保障人身及财产安全(<span class="pink-txt">免费</span>)</div>
+                <div class="menu-r"><input type="checkbox"></div>
+                <a href="" class="menu-link"></a>
+            </li>
+        </ul>
+    </section>
+    <section class="submit-btn">
+        <div class="box">
+            <div class="price">待支付：<span class="red-txt">￥202.00</span></div>
+            <div class="btn-area"><button class="btn">提交订单</button></div>
+            
+        </div>
+        
+    </section>
+</div>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/iscroll-lite.js"></script>
+<script type="text/javascript" src="js/detail.js"></script>
+</body>
+</html> 
