@@ -310,6 +310,7 @@ $main-color: #f69;
     @include box;
     @include bd-tb-1px(solid,#dedede,top);
     position: fixed;
+    z-index: 5;
     bottom: 0;
     left: 0;
     width: 100%;

@@ -34,8 +34,7 @@ body, html {
   line-height: 1;
   color: #333;
   background: #eee;
-  height: 100%;
-  overflow-x: hidden; }
+  height: 100%; }
 
 html {
   -webkit-text-size-adjust: none;
@@ -2879,6 +2878,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
   display: -ms-flexbox;
   position: relative;
   position: fixed;
+  z-index: 5;
   bottom: 0;
   left: 0;
   width: 100%;
