@@ -2591,7 +2591,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
         .info-sec .info-wrap .info1 .info1-l .imp {
           color: #ff6699; }
         .info-sec .info-wrap .info1 .info1-l p {
-          margin-bottom: 12px; }
+          margin-bottom: 12px;
+          line-height: 18px; }
           .info-sec .info-wrap .info1 .info1-l p:last-child {
             margin-bottom: 0; }
     .info-sec .info-wrap .info2, .info-sec .info-wrap .info3 {
